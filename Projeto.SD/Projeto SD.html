@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto: Monitoramento de Nível de Água</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="main-container" class="container">
+        <h1>Monitoramento de Nível de Água</h1>
+
+        <h2>Descrição do Projeto</h2>
+        <p id="project-description">Este projeto visa monitorar o nível de água em reservatórios como caixas d'água, utilizando LEDs para indicar o nível (0%, 25%, 50%, 75%, 100%) e um buzzer para alertar quando o nível estiver cheio (100%). O objetivo é evitar transbordamento e facilitar o monitoramento do volume de água.</p>
+
+        <h2>Objetivos</h2>
+        <ul id="project-goals">
+            <li data-goal="1">Evitar transbordamento através do som emitido pelo buzzer.</li>
+            <li data-goal="2">Reduzir o desperdício de água monitorando o nível.</li>
+            <li data-goal="3">Facilitar a visualização do nível de água com LEDs.</li>
+            <li data-goal="4">Prevenir acidentes relacionados ao difícil acesso ao reservatório.</li>
+        </ul>
+
+        <h2>Materiais Necessários</h2>
+        <ul id="materials-list">
+            <li data-material="resistor">5 resistores de 180 ohms</li>
+            <li data-material="transistor">5 transistores BC548</li>
+            <li data-material="led-red">2 LEDs vermelhos</li>
+            <li data-material="led-yellow">2 LEDs amarelos</li>
+            <li data-material="led-green">1 LED verde</li>
+            <li data-material="arduino">1 Arduino Uno</li>
+            <li data-material="buzzer">1 Buzzer</li>
+            <li data-material="tools">Jumpers, estanho, fios e ferro de solda</li>
+        </ul>
+
+        <h2>Passo a Passo da Montagem</h2>
+
+        <section id="step1" class="step-section" data-step="1">
+            <h3>Passo 1: Conecte os LEDs aos Resistores</h3>
+            <p>Conecte os LEDs aos resistores de 180 ohms para limitar a corrente elétrica e evitar danos aos LEDs. Esta etapa é essencial para proteger os componentes.</p>
+            <div class="video-container">
+                <iframe id="video1" class="video-frame" width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_1" title="Vídeo Passo 1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="step2" class="step-section" data-step="2">
+            <h3>Passo 2: Controle com Transistores BC548</h3>
+            <p>Utilize transistores BC548 para controlar os LEDs através do Arduino. Os transistores funcionarão como interruptores eletrônicos, facilitando o controle dos LEDs.</p>
+            <div class="video-container">
+                <iframe id="video2" class="video-frame" width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_2" title="Vídeo Passo 2" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="step3" class="step-section" data-step="3">
+            <h3>Passo 3: Instalação dos Fios nos Níveis</h3>
+            <p>Instale os fios nos diferentes níveis do reservatório (0%, 25%, 50%, 75% e 100%). Os fios conduzirão a carga elétrica ao Arduino quando a água atingir cada nível, ativando o LED correspondente.</p>
+            <div class="video-container">
+                <iframe id="video3" class="video-frame" width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_3" title="Vídeo Passo 3" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="step4" class="step-section" data-step="4">
+            <h3>Passo 4: Conexão ao Arduino</h3>
+            <p>Conecte os LEDs e o buzzer aos pinos digitais do Arduino. Cada LED será ligado a um pino específico para que o Arduino possa controlar o nível de água corretamente.</p>
+            <div class="video-container">
+                <iframe id="video4" class="video-frame" width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_4" title="Vídeo Passo 4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="step5" class="step-section" data-step="5">
+            <h3>Passo 5: Soldagem das Conexões</h3>
+            <p>Utilize o ferro de solda para fixar as conexões de forma segura. A soldagem garante que os componentes estejam bem conectados e que o circuito funcione corretamente.</p>
+            <div class="video-container">
+                <iframe id="video5" class="video-frame" width="100%" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_5" title="Vídeo Passo 5" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <a href="#" id="learn-more" class="button">Saiba Mais</a>
+    </div>
+
+</body>
+</html>
